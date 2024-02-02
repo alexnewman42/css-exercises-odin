@@ -10,8 +10,14 @@ html {
   padding: 16px;
   box-sizing: border-box;
   display: grid;
-  grid-template: 60px 60px 60px 60px 60px 60px 60px / 25vw 25vw 25vw 25vw;
+  grid-template: 80px 80px 400px 80px / 320px 960px;
   gap: 15px;
+  grid-template-areas:
+    "header header"
+    "sidebar nav"
+    "sidebar article"
+    "footer footer"
+
 }
 
 .container div {
@@ -48,4 +54,24 @@ html {
   font-family: sans-serif;
   color: white;
   text-align: left;
+}
+
+#header {
+  grid-area: header;
+}
+
+#sidebar {
+  grid-area: sidebar;
+}
+
+#nav {
+  grid-area: nav;
+}
+
+#article {
+  grid-area: article;
+}
+
+#footer {
+  grid-area: footer;
 }
