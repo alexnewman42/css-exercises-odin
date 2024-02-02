@@ -9,15 +9,7 @@ html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
-  display: grid;
-  grid-template: 80px 80px 400px 80px / 320px 960px;
-  gap: 15px;
-  grid-template-areas:
-    "header header"
-    "sidebar nav"
-    "sidebar article"
-    "footer footer"
-
+ 
 }
 
 .container div {
